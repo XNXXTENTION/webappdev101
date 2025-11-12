@@ -1,0 +1,100 @@
+/* ตั้งค่าพื้นฐานสำหรับทุกองค์ประกอบ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ตั้งค่า Font และสีพื้นหลังหลัก */
+body {
+    font-family: 'Mitr', sans-serif; /* ใช้ Font Mitr ที่เพิ่มมาใน HTML */
+    background-color: #f4f4f4; /* สีเทาอ่อนมาก */
+    color: #333; /* สีตัวอักษรเทาเข้ม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* จัดกึ่งกลางเนื้อหาหลัก (Container) */
+.container {
+    background-color: #ffffff; /* พื้นหลังสีขาวสำหรับกล่องเนื้อหา */
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* เงาบางๆ ให้ดูมีมิติ */
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* รูปโปรไฟล์ */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #eaeaea; /* ขอบบางๆ */
+}
+
+/* ชื่อหลัก */
+h1 {
+    font-size: 2em;
+    font-weight: 600; /* เน้นความเข้ม */
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+/* ชื่อรอง/ภาษาอังกฤษ */
+h2 {
+    font-size: 1.1em;
+    font-weight: 300; /* ทำให้ดูเบาลง */
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* คำโปรย/Tagline */
+.tagline {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* ส่วนแนะนำตัว (Bio) */
+.bio p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify; /* จัดชิดขอบซ้ายขวา (ไม่จำเป็นถ้าชอบกึ่งกลาง) */
+}
+
+/* ลิงก์โซเชียลมีเดีย */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+    margin-bottom: 30px;
+}
+
+.link-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333; /* สีดำ/เทาเข้มสำหรับปุ่ม */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: 400;
+}
+
+.link-btn:hover {
+    background-color: #555; /* สีเข้มขึ้นเมื่อเมาส์ชี้ */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อย */
+}
+
+/* Footer */
+footer p {
+    font-size: 0.8em;
+    color: #aaa;
+}
